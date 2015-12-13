@@ -49,3 +49,15 @@ ReactDOM.render(<Main />, document.getElementById("container"));
 ## Build standalone version
 
 Use the demo project and it's README instructions to build a version of React with the tap event plugin included.
+
+
+## ADDED FOR COLLAGE.COM
+Run browserify to bundle reacttap into a standalone react wrapper that can be
+required from requireJS and includes all of react. NOTE: this is a really ugly
+hack and should be done correctly at some point soon.
+
+```
+cd demo
+npm install
+browserify reacttap.js --standalone ReactTap > reacttap-bundle.js
+```
